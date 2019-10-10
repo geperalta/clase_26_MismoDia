@@ -4,50 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Register</title>
-    <script defer src="register.js"></script>
-    <!--agregamos bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!--agregamos bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
-    <!--defer es para que el script se escriba hasta que se cargue la pagina. DEFER/ASYNC-->
+    <title>Login</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </head>
 <body>
-
-    <div class="contatiner">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="contatiner">
-                <h1 class="display-4">Register</h1>
-                <p class="lead">Register a user in our Homework</p>
-            </div>
+    <!--Agregamos framework materialize-->
+    
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo">Login</a>
+                </div>
+            </nav>
         </div>
-    <form action="#" method="POST">
-        <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" name="name" id="name"> 
-        </div>
-        <div class="form-group">
-                <label for="userName">Usuario:</label>
-                <input type="text" name="userName" id="userName">
-        </div>
-        <div class="form-group">
-                <label for="password">Contraseña</label>
-                <input type="password" value="password" id="password">
-        </div>
-    </form>
-</div>
-
+    <div class="container">
     <form action="#" method="post">
         
+        <div class="input-field">
+                <label for="userName">Username:</label>
+                <input type="text" name="username" id="username">
+        </div>
 
-        
+        <div class="input-field">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
 
+        </div>
 
-        <label for="register"></label>
-        <input type="button" value="register" id="register">
+        <div class="input-field">
+                <label for="login"></label>
+                <input type="button" class="waves-effect waves-lght deep-purple btn" value="Login" id="login">
+
+        </div>
+    </div>
     </form>
+</div>
 </body>
 </html>
